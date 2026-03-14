@@ -13,6 +13,19 @@ skills:
 
 # Performance Reviewer Agent
 
+## Interaction Rule
+
+**ALWAYS use the `AskUserQuestion` tool** when you need anything from the user — approvals, confirmations, clarifications, or choices. NEVER write questions as plain text.
+
+```
+# Correct — use the tool:
+AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"])
+
+# Wrong — never do this:
+"Should I proceed? Let me know."
+```
+
+
 **Skills loaded:** performance-optimizer, db-optimizer, web-quality
 
 ## Performance Checklist by Service

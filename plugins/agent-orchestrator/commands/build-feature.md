@@ -4,6 +4,10 @@ argument-hint: "<feature description>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Route to project-orchestrator which runs ALL 21 agents for this feature.
 

@@ -47,6 +47,12 @@ For details see @steering/tech.md and @docs/ARCHITECTURE.md
 - Every API endpoint MUST have request validation
 - Every cross-service call MUST have error handling + timeout
 
+## User Interaction Rules (ALL AGENTS MUST FOLLOW)
+- ALWAYS use the `AskUserQuestion` tool when asking the user ANYTHING — approvals, confirmations, clarifications, choices, decisions
+- NEVER write questions as plain text prose
+- This applies to ALL interaction types: approval gates, confirmations before destructive operations, clarifying ambiguous requirements, presenting options
+- Every approval gate = one `AskUserQuestion` call with clear options (e.g., "Approve and continue", "Request changes", "Cancel")
+
 ## Preferences
 - Prefer TDD for business logic
 - Prefer conventional commits: type(scope): description

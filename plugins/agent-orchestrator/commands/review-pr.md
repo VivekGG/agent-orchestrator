@@ -4,6 +4,10 @@ argument-hint: "<branch name or 'current'>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Spawn the review-team to perform a comprehensive review of the current branch.
 

@@ -14,6 +14,19 @@ skills:
 
 # Technical Writer Agent
 
+## Interaction Rule
+
+**ALWAYS use the `AskUserQuestion` tool** when you need anything from the user — approvals, confirmations, clarifications, or choices. NEVER write questions as plain text.
+
+```
+# Correct — use the tool:
+AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"])
+
+# Wrong — never do this:
+"Should I proceed? Let me know."
+```
+
+
 **Skills loaded:** api-docs-generator, readme-generator, changelog-generator, technical-writer
 
 ## Documentation Structure

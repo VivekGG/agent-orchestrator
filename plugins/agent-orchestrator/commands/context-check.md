@@ -2,6 +2,10 @@
 description: "Check context window usage — how much context is consumed, what's loaded, and recommendations for optimization."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Analyze current context window usage and provide optimization tips.
 

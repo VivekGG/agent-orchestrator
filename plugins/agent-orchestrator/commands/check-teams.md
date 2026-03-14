@@ -2,6 +2,10 @@
 description: "Check agent team status — which teams are running, their progress, teammate status, and any coordination issues."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Report on agent team activity and health.
 

@@ -2,6 +2,10 @@
 description: "Show project status dashboard — pending tasks, agent activity, test results, deployment status, and overall health. The main monitoring command."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Display a comprehensive project status dashboard.
 

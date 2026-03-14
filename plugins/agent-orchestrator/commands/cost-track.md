@@ -2,6 +2,10 @@
 description: "Track API token usage and costs per session — shows tokens consumed, estimated cost, and per-agent breakdown. Helps manage Team/Enterprise plan limits."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Show token usage and cost estimates for the current session.
 

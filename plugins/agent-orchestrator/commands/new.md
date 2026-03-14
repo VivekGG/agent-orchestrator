@@ -13,11 +13,11 @@ Task size (SMALL/MEDIUM/BIG) only determines approval gates, NOT which agents ru
 
 ## Steps
 1. Pass the user's description to project-orchestrator
-2. Orchestrator asks 2-3 clarifying questions
-3. Orchestrator classifies size for approval gates only:
+2. Orchestrator uses **AskUserQuestion tool** to ask 2-3 clarifying questions (e.g. target platform, scale, key constraints)
+3. Orchestrator classifies size and uses **AskUserQuestion tool** for approval gates:
    - SMALL (1-3 files): all agents run, no approval needed
-   - MEDIUM (4-10 files): all agents run, one approval gate
-   - BIG (10+ files): all agents run, four approval gates
+   - MEDIUM (4-10 files): all agents run — **AskUserQuestion**: "Plan looks good. Proceed?" → [Proceed / Request changes]
+   - BIG (10+ files): all agents run — **AskUserQuestion** at each of 4 gates → [Approve / Request changes / Cancel]
 4. ALL 9 phases execute with ALL 21 agents:
 
 ```

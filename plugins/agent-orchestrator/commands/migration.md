@@ -4,6 +4,10 @@ argument-hint: "<action: create | apply | rollback | status> <service: core | ai
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Manage database migrations across services.
 

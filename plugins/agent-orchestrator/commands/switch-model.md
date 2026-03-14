@@ -4,6 +4,10 @@ argument-hint: "<agent-name> <opus|sonnet> OR <preset: cost-saver|balanced|max-q
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Switch agent models for cost optimization or quality adjustment.
 

@@ -2,6 +2,10 @@
 description: "View agent activity log — what each agent did, when, which files were touched, and what was committed. Reads from git log and progress tracker."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Show a timeline of agent activity in the current session.
 

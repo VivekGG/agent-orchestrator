@@ -2,6 +2,10 @@
 description: "Generate TypeScript/Dart types from the API spec — keeps frontend and mobile types in sync with the backend API contract."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Generate typed API clients from the OpenAPI spec.
 

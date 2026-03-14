@@ -5,6 +5,19 @@ description: Agent team for comprehensive feature planning. Spawns parallel plan
 
 # Planning Team
 
+## Interaction Rule
+
+**ALWAYS use the `AskUserQuestion` tool** when you need anything from the user — approvals, confirmations, clarifications, or choices. NEVER write questions as plain text.
+
+```
+# Correct — use the tool:
+AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"])
+
+# Wrong — never do this:
+"Should I proceed? Let me know."
+```
+
+
 Spawn this team for big features that need comprehensive specs before building.
 
 ## Team Composition

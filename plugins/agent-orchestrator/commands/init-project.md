@@ -4,6 +4,10 @@ argument-hint: "<project-name>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Create the complete project structure from scratch.
 

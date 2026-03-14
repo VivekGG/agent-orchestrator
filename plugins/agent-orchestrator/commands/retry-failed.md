@@ -2,6 +2,10 @@
 description: "Retry all failed tasks — re-reads the task spec, attempts a different approach, and updates status."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Find all failed tasks and retry them with a fresh approach.
 

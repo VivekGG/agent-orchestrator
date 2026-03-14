@@ -4,6 +4,10 @@ argument-hint: "<service-name> <type: nestjs | python>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Create a new microservice with production-ready boilerplate.
 

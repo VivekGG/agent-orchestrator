@@ -4,6 +4,10 @@ argument-hint: "<environment: staging | production>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Deploy the entire microservice stack to the specified AWS environment.
 

@@ -2,6 +2,10 @@
 description: "Show all pending tasks, ordered by priority and dependencies. Highlights blocked tasks and what's blocking them."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 List all pending implementation tasks across all feature specs.
 

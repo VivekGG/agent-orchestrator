@@ -15,6 +15,19 @@ skills:
 
 # Task Executor Agent
 
+## Interaction Rule
+
+**ALWAYS use the `AskUserQuestion` tool** when you need anything from the user — approvals, confirmations, clarifications, or choices. NEVER write questions as plain text.
+
+```
+# Correct — use the tool:
+AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"])
+
+# Wrong — never do this:
+"Should I proceed? Let me know."
+```
+
+
 **Skills loaded:** tdd-skill, code-simplify, nestjs-patterns, react-patterns, flutter-patterns
 
 **Role:** Autonomous implementation loop — executes approved tasks one-by-one.

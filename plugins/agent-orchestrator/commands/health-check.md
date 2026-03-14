@@ -2,6 +2,10 @@
 description: "Check the health of all running services — API endpoints, database connections, Redis, external services. Reports any issues."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Verify all services are running and healthy.
 

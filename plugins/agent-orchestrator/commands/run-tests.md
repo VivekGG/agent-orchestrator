@@ -2,6 +2,10 @@
 description: "Run the complete test suite across ALL services — unit, integration, E2E, security, accessibility. Reports pass/fail per service."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Execute every test in the project and report results.
 

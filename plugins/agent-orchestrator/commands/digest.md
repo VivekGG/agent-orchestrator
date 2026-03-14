@@ -2,6 +2,10 @@
 description: "Generate a DIGEST.md summary of the current session — key decisions, files modified, current state, pending items. Enables quick re-contextualization in future sessions."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Create a DIGEST.md file that captures the current session state for future re-contextualization.
 

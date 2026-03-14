@@ -4,6 +4,10 @@ argument-hint: "<error message or bug description>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 This is the ONE exception to the full pipeline rule. For small bug fixes (1-3 files), we skip the full pipeline for speed.
 

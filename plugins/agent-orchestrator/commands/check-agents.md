@@ -2,6 +2,10 @@
 description: "Verify all agents are loaded, properly configured, and have their required skills available. Reports agent health status."
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Check that all 21 agents in the solo-dev-orchestrator plugin are properly installed and functional.
 

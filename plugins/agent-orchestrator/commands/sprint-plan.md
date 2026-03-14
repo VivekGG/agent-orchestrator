@@ -4,6 +4,10 @@ argument-hint: "<sprint goal or feature list>"
 disable-model-invocation: true
 ---
 
+## Interaction Rule
+When confirmation, clarification, or approval is needed, **always use the `AskUserQuestion` tool** — never write questions as plain text.
+
+
 ## Mission
 Create a structured sprint plan from the current backlog.
 
