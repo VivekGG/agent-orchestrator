@@ -1,17 +1,17 @@
 {
-    "$schema": "https://cdn.jsdelivr.net/npm/@anthropic-ai/claude-code@latest/marketplace-schema.json",
-    "name": "agent-orchestrator",
-    "description": "Complete autonomous development system for solo developers",
-    "owner": {
-        "name": "Agent Orchestrator",
-        "email": "dev@example.com"
-    },
-    "plugins": [
-        {
-            "name": "agent-orchestrator",
-            "description": "21 agents, 3 teams, 25 commands, 63 skills, 4 hooks for full SDLC",
-            "version": "2.1.0",
-            "strict": false
-        }
-    ]
+  "$schema": "https://cdn.jsdelivr.net/npm/@anthropic-ai/claude-code@latest/marketplace-schema.json",
+  "name": "agent-orchestrator",
+  "description": "Complete autonomous development system for agents",
+  "owner": {
+    "name": "Agent Orchestrator",
+    "email": "dev@example.com"
+  },
+  "plugins": [
+    {
+      "name": "agent-orchestrator",
+      "description": "21 agents, 3 teams, 25 commands, 63 skills, 4 hooks for full development",
+      "version": "2.1.0",
+      "strict": false
+    }
+  ]
 }
