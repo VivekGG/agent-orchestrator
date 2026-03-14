@@ -1,6 +1,7 @@
 ---
 description: "Start a new project or feature. THE entry point for all new work. ALWAYS runs the full 21-agent pipeline (planning → design → build → test → security → review → devops → docs) regardless of project size."
 argument-hint: "<what you want to build>"
+disable-model-invocation: true
 ---
 
 ## Mission

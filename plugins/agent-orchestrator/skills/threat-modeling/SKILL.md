@@ -1,6 +1,7 @@
 ---
 name: threat-modeling
 description: Perform STRIDE threat modeling — Spoofing, Tampering, Repudiation, Information Disclosure, DoS, Elevation of Privilege. Use when the user says "threat model", "STRIDE analysis", "security assessment", or needs to identify threats before building security controls.
+allowed-tools: Read, Grep, Glob
 ---
 
 # Threat Modeling Skill (STRIDE)

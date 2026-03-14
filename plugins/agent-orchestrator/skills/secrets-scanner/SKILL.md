@@ -1,6 +1,7 @@
 ---
 name: secrets-scanner
 description: Detect accidentally committed secrets — API keys, passwords, tokens, private keys, database URLs in code and config. Use when the user says "scan for secrets", "check for leaked keys", "secrets audit", or before any public repository push.
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 # Secrets Scanner Skill

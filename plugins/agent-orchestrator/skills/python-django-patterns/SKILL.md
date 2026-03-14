@@ -1,6 +1,7 @@
 ---
 name: python-django-patterns
 description: Implement Python/Django best practices — project structure, Django REST Framework APIs, Celery async tasks, model patterns, serializers, viewsets, testing with pytest, and AI/ML service patterns. Used by python-developer and backend-developer agents for Python service implementation. Do NOT invoke directly — agents load this skill automatically.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Python Django Patterns Skill

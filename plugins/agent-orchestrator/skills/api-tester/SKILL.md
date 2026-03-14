@@ -1,6 +1,7 @@
 ---
 name: api-tester
 description: Generate and run API test suites — endpoint validation, auth flows, error scenarios, rate limit testing, and schema validation. Use when the user says "test the API", "API test suite", "validate endpoints", or needs to verify API behavior against its specification.
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # API Tester Skill

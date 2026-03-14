@@ -1,6 +1,7 @@
 ---
 description: "Undo last agent changes — git-based rollback to previous state. Can rollback by commit count, to a specific commit, or to last checkpoint."
 argument-hint: "<count: number of commits> OR <commit-hash> OR 'last-checkpoint'"
+disable-model-invocation: true
 ---
 
 ## Mission

@@ -3,6 +3,8 @@ name: frontend-developer
 description: Implements React/Next.js web components and Flutter/KMP mobile widgets — UI, state management, forms, animations, responsive layouts, accessibility. Invoke for any frontend implementation.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 30
 skills:
   - react-patterns
   - flutter-patterns

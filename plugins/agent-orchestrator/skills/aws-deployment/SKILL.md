@@ -1,6 +1,7 @@
 ---
 name: aws-deployment
 description: Deploy applications to AWS — EC2, ECS, Lambda, S3, CloudFront, RDS, ElastiCache, IAM, VPC, and CDK/Terraform infrastructure. Use when deploying to AWS, configuring cloud resources, setting up infrastructure, or the user mentions any AWS service.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # AWS Deployment Skill

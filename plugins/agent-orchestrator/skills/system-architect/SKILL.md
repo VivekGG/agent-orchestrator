@@ -1,6 +1,7 @@
 ---
 name: system-architect
 description: Design system architecture — microservices vs monolith decisions, layer diagrams, module boundaries, data flow, infrastructure topology, and Mermaid diagrams. Use when the user asks to "design the architecture", "system design", "how should I structure this", "architect this app", "microservices or monolith", or needs to make high-level technical decisions before coding.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # System Architect Skill

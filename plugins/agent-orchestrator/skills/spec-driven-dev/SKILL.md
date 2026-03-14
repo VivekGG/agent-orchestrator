@@ -1,6 +1,7 @@
 ---
 name: spec-driven-dev
 description: Enforce the Spec-Driven Development workflow — Requirements→Design→Tasks→Implementation with phase gates and review checkpoints. Use when the user wants structured development instead of vibe coding, needs to plan a complex feature before building, or mentions "spec-driven", "SDD", "plan before code", "structured development", or "phase gates".
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Spec-Driven Development Skill

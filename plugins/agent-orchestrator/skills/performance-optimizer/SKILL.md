@@ -1,6 +1,7 @@
 ---
 name: performance-optimizer
 description: Profile and optimize: bundle size, lazy loading, query optimization, caching, memory leak detection. Use when the user mentions "Optimize performance", "Speed up", or related tasks.
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 # Performance Optimizer Skill

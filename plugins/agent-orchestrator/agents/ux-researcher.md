@@ -3,6 +3,8 @@ name: ux-researcher
 description: Creates user personas, journey maps, information architecture, wireframes, and UI specifications for web (React) and mobile (Flutter/KMP). Invoke for UX planning and design.
 tools: Read, Grep, Glob, Write
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 25
 skills:
   - frontend-design-extended
   - ui-wireframes

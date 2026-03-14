@@ -1,6 +1,7 @@
 ---
 description: "Switch agent models between Opus and Sonnet for cost optimization. Opus for complex reasoning (architecture, security), Sonnet for execution (implementation, testing)."
 argument-hint: "<agent-name> <opus|sonnet> OR <preset: cost-saver|balanced|max-quality>"
+disable-model-invocation: true
 ---
 
 ## Mission

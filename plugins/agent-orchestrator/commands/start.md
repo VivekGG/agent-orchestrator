@@ -1,6 +1,7 @@
 ---
 description: "Start building something new — alias for /new. ALWAYS runs full 21-agent pipeline."
 argument-hint: "<what you want to build>"
+disable-model-invocation: true
 ---
 
 ## Mission

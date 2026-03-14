@@ -1,6 +1,7 @@
 ---
 name: user-story-writer
 description: Generate numbered user stories in "As a / I want / So that" format with bullet-point acceptance criteria, priorities, dependencies, edge cases, and technical notes. Use when the user asks to "write user stories", "create acceptance criteria", "define features", "story mapping", or needs to convert vague requirements into structured, testable stories.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # User Story Writer Skill

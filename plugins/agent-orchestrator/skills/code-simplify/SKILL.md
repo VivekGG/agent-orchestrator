@@ -1,6 +1,7 @@
 ---
 name: code-simplify
 description: Review and simplify code — extract reusable utilities, reduce duplication, improve naming, simplify logic, and enhance readability. Use when the user says "simplify", "clean up", "refactor", "reduce complexity", "code smell", or after implementation to improve code quality.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Code Simplify Skill

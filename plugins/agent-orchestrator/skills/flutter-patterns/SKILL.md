@@ -1,6 +1,7 @@
 ---
 name: flutter-patterns
 description: Build Flutter applications with clean architecture, BLoC/Riverpod state management, responsive layouts, platform-adaptive widgets, and testing. Use when building Flutter apps, creating widgets, managing state, handling navigation, or implementing platform-specific features. Trigger on "Flutter", "Dart", "Flutter widget", "BLoC", "Riverpod", "Flutter app".
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Flutter Patterns Skill

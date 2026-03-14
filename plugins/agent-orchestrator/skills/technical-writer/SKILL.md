@@ -1,6 +1,7 @@
 ---
 name: technical-writer
 description: Write clear technical documentation — guides, tutorials, architecture docs, and runbooks with proper structure and examples. Use when the user needs documentation, technical writing, or API docs. Trigger on related keywords.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Technical Writer Skill

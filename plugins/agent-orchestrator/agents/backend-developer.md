@@ -3,6 +3,8 @@ name: backend-developer
 description: Implements NestJS and Python/Django backend services — API endpoints, business logic, database queries, authentication, middleware, background jobs, and inter-service communication. Invoke for any backend implementation.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 30
 skills:
   - nestjs-patterns
   - api-implementation

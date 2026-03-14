@@ -1,6 +1,7 @@
 ---
 name: load-tester
 description: Set up and run performance/load testing — concurrent users, response time benchmarks, stress testing, and bottleneck identification using k6, Artillery, or Apache Bench. Use when the user says "load test", "performance benchmark", "stress test", "how many users can this handle".
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Load Tester Skill

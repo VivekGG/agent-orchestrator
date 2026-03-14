@@ -1,6 +1,7 @@
 ---
 name: frontend-design-extended
 description: Create distinctive frontend interfaces when DELEGATED by the frontend-developer or ui-designer agents. Provides design systems, component architecture, responsive layouts, animations, and accessibility patterns. Do NOT invoke directly for new application requests — those go through project-orchestrator first.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Frontend Design Extended Skill

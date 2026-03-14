@@ -1,6 +1,7 @@
 ---
 description: "Create a sprint plan from pending features — prioritize, estimate, break into tasks, and create a 1-2 week implementation plan."
 argument-hint: "<sprint goal or feature list>"
+disable-model-invocation: true
 ---
 
 ## Mission

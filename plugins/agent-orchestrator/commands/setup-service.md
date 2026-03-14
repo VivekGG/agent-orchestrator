@@ -1,6 +1,7 @@
 ---
 description: "Scaffold a new microservice — creates directory structure, boilerplate code, Dockerfile, tests, and CI config. Supports NestJS and Python/Django."
 argument-hint: "<service-name> <type: nestjs | python>"
+disable-model-invocation: true
 ---
 
 ## Mission

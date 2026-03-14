@@ -1,6 +1,7 @@
 ---
 name: react-patterns
 description: Implement React best practices when DELEGATED by the frontend-developer or senior-engineer agents — hooks patterns, server components, state management, error boundaries, performance optimization. Not a standalone entry point for building applications.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # React Patterns Skill

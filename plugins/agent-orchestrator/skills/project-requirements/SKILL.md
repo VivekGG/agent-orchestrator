@@ -1,6 +1,7 @@
 ---
 name: project-requirements
 description: Generate complete project requirement documents — PRD, user stories, feature lists, acceptance criteria, design specs, API specifications, database schemas, task breakdowns, and test plans. Use this skill whenever the user wants to create project documentation, write a PRD, define features, create user stories, spec out an application, plan a feature, create a design document, break down tasks for implementation, or prepare any specification document. Also trigger for "spec-driven development", "SDD", "requirements document", "feature spec", "product spec", "application spec", "write user stories", "acceptance criteria", "task breakdown", "implementation plan", "design doc".
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Project Requirements Skill

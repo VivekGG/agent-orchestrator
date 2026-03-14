@@ -3,6 +3,8 @@ name: test-engineer
 description: Writes comprehensive tests across ALL levels — unit, integration, E2E, security, UAT, accessibility. Covers NestJS (Jest), Python (pytest), React (Jest/Vitest), Flutter (flutter_test), Playwright (E2E). Creates complete test plans. Invoke for any testing work.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 30
 skills:
   - test-writer
   - webapp-testing

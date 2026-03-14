@@ -1,6 +1,7 @@
 ---
 description: "Quick autonomous bug fix — the ONLY command that does NOT run the full pipeline. Uses minimal agents for speed: finds bug, fixes it, writes regression test, commits. No approval needed."
 argument-hint: "<error message or bug description>"
+disable-model-invocation: true
 ---
 
 ## Mission

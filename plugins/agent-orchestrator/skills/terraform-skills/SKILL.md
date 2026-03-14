@@ -1,6 +1,7 @@
 ---
 name: terraform-skills
 description: Write Terraform infrastructure-as-code — modules, providers, state management, workspaces, and security. Use when the user mentions "Terraform", "IaC", "infrastructure as code", "cloud provisioning", or needs to manage cloud resources declaratively.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Terraform Skills

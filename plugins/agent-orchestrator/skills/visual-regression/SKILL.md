@@ -1,6 +1,7 @@
 ---
 name: visual-regression
 description: Capture and compare UI screenshots before/after changes to detect unintended visual differences. Use when the user mentions "visual regression", "screenshot testing", "UI diff", "visual comparison", or needs to ensure UI changes don't break existing pages.
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Visual Regression Skill

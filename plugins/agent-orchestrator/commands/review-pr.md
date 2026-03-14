@@ -1,6 +1,7 @@
 ---
 description: "Comprehensive PR review using the review-team — code quality, security audit, and performance analysis in parallel."
 argument-hint: "<branch name or 'current'>"
+disable-model-invocation: true
 ---
 
 ## Mission

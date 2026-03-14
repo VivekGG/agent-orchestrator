@@ -1,6 +1,7 @@
 ---
 name: task-breakdown
 description: Break features into ordered, dependency-aware implementation tasks with verification commands, file lists, effort estimates, and commit messages. Use when the user says "break this into tasks", "create implementation plan", "task breakdown", "decompose this feature", or needs to convert a design into actionable coding steps.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Task Breakdown Skill

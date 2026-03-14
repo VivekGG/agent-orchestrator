@@ -3,6 +3,8 @@ name: deployment-engineer
 description: Handles production deployments — blue-green deployments, canary releases, database migrations, rollback procedures, and zero-downtime deploys for the microservice stack. Invoke for production deployment planning.
 tools: Read, Write, Edit, Bash, Grep, Glob
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 30
 skills:
   - release-manager
   - docker-skill

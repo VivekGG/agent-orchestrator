@@ -1,6 +1,7 @@
 ---
 name: ui-wireframes
 description: Create UI wireframes, screen layouts, navigation flows, and component specifications using ASCII art, Mermaid diagrams, and structured markdown. Use when the user needs wireframes, mockups, screen layouts, navigation maps, or UI specifications before building the frontend.
+allowed-tools: Read, Write, Grep, Glob
 ---
 
 # UI Wireframes Skill

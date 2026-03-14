@@ -1,6 +1,7 @@
 ---
 name: ci-cd-setup
 description: Generate CI/CD pipelines — GitHub Actions, GitLab CI, Jenkins. Build, test, lint, deploy stages with environment variables and secrets management. Use when the user says "set up CI/CD", "GitHub Actions", "pipeline", "automated deployment", or needs continuous integration.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # CI/CD Setup Skill

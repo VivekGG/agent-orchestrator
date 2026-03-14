@@ -1,6 +1,7 @@
 ---
 name: web-quality
 description: Audit web application quality — Core Web Vitals (LCP, FID, CLS), Lighthouse scores, performance optimization, accessibility compliance, SEO, and best practices. Use when the user mentions "performance audit", "Lighthouse", "Core Web Vitals", "LCP", "page speed", "web quality", or needs to improve web app metrics.
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Web Quality Skill

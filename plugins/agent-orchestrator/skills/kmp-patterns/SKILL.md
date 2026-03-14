@@ -1,6 +1,7 @@
 ---
 name: kmp-patterns
 description: Build Kotlin Multiplatform (KMP) applications — shared business logic across Android, iOS, desktop, and web. Covers project structure, expect/actual declarations, Ktor networking, SQLDelight database, Koin DI, and Compose Multiplatform UI. Use when building KMP apps, sharing code between platforms, or implementing cross-platform features. Trigger on "KMP", "Kotlin Multiplatform", "Compose Multiplatform", "shared module", "expect actual".
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Kotlin Multiplatform (KMP) Patterns Skill

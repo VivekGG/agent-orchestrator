@@ -1,6 +1,7 @@
 ---
 description: "Full project initialization — creates the complete monorepo structure with all services, docker-compose, CI/CD pipeline, environment config, and documentation scaffolds. The FIRST command to run on a brand new project."
 argument-hint: "<project-name>"
+disable-model-invocation: true
 ---
 
 ## Mission

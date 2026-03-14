@@ -1,6 +1,7 @@
 ---
 name: database-designer
 description: Design database schemas — ER diagrams, table definitions with constraints, indexes, relationships, migration strategies, seed data, and query optimization. Supports PostgreSQL, MySQL, SQLite, MongoDB. Use when the user says "design the database", "create schema", "data model", "ER diagram", "database migration", "table structure", or needs to define how data is stored and related.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Database Designer Skill

@@ -1,6 +1,7 @@
 ---
 name: monitoring-setup
 description: Configure observability — structured logging, metrics (Prometheus/CloudWatch), tracing (OpenTelemetry), alerting, and dashboards. Use when the user says "set up monitoring", "add logging", "observability", "alerting", or needs to track application health in production.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Monitoring Setup Skill

@@ -1,6 +1,7 @@
 ---
 description: "Deploy all microservices to AWS. Runs pre-deploy checks, builds Docker images, pushes to ECR, deploys to ECS, and runs smoke tests."
 argument-hint: "<environment: staging | production>"
+disable-model-invocation: true
 ---
 
 ## Mission

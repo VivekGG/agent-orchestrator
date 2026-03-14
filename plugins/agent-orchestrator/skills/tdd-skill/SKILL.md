@@ -1,6 +1,7 @@
 ---
 name: tdd-skill
 description: Enforce strict Test-Driven Development — Red-Green-Refactor cycle. Write failing tests first, implement minimal code to pass, then refactor. Use when the user says "write tests first", "TDD", "test-driven", "red green refactor", or when building features that require high reliability. This skill prevents the agent from skipping to implementation.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # TDD (Test-Driven Development) Skill

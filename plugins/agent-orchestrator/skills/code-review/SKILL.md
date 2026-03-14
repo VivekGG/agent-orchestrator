@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: Perform thorough code review — logic errors, naming quality, duplication, complexity, test coverage, performance, and security. Uses a fresh context for objectivity. Use when the user says "review this code", "PR review", "code quality check", or needs a second pair of eyes on implementation.
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 # Code Review Skill

@@ -3,6 +3,8 @@ name: performance-reviewer
 description: Reviews code for performance issues across the stack — N+1 queries, unnecessary re-renders, missing indexes, bundle size, memory leaks, API latency, and AI service response times. Invoke when optimizing performance.
 tools: Read, Grep, Glob, Bash
 model: sonnet
+permissionMode: default
+maxTurns: 20
 skills:
   - performance-optimizer
   - db-optimizer

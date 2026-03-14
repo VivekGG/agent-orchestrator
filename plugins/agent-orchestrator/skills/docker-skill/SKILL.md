@@ -1,6 +1,7 @@
 ---
 name: docker-skill
 description: Create optimized Dockerfiles, multi-stage builds, docker-compose configs, health checks, and container security. Use when the user says "Dockerize", "Docker compose", "container", "Dockerfile", or needs to containerize their application.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Docker Skill

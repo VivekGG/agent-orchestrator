@@ -1,6 +1,7 @@
 ---
 description: "Build a feature end-to-end using the FULL 21-agent pipeline. Classifies size for approval gates only — all agents always run."
 argument-hint: "<feature description>"
+disable-model-invocation: true
 ---
 
 ## Mission

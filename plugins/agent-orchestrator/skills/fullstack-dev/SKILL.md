@@ -1,6 +1,7 @@
 ---
 name: fullstack-dev
 description: Scaffold and configure project structures, boilerplate code, and initial setup when DELEGATED by the project-orchestrator agent. Do NOT invoke this skill directly for new application requests — those should go through the project-orchestrator agent first. Only triggers when explicitly called by an agent, not from user prompts like "build an app" or "create a project".
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Fullstack Development Skill

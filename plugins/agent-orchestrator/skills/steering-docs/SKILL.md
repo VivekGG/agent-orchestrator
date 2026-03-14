@@ -1,6 +1,7 @@
 ---
 name: steering-docs
 description: Generate persistent project context files — product.md, tech.md, structure.md — that guide every coding session. Use when setting up a new project, creating project context, or when the user mentions "steering documents", "project context", "product vision", or "tech stack documentation".
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Steering Documents Skill

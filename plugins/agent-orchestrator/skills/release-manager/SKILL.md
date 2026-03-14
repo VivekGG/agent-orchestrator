@@ -1,6 +1,7 @@
 ---
 name: release-manager
 description: Manage releases — semantic versioning, changelog generation, release notes, git tags, and rollback procedures. Use when the user says "create release", "version bump", "changelog", "release notes", or needs to ship a new version.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Release Manager Skill

@@ -1,6 +1,7 @@
 ---
 description: "Create a named checkpoint/backup before risky operations. Uses git tags so you can /rollback to it later."
 argument-hint: "<checkpoint-name>"
+disable-model-invocation: true
 ---
 
 ## Mission

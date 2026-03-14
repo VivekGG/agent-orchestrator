@@ -1,6 +1,7 @@
 ---
 name: migration-skill
 description: Handle framework migrations (JS→TS, REST→GraphQL), database migrations, and version upgrades with safe rollback strategies. Use when the user mentions "Migrate to TypeScript", "Upgrade framework", or related tasks.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Migration Skill Skill

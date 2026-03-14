@@ -1,6 +1,7 @@
 ---
 name: error-handling
 description: Implement consistent error handling: custom error classes, boundaries, retry logic, graceful degradation. Use when the user mentions "Handle errors", "Error strategy", or related tasks.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Error Handling Skill

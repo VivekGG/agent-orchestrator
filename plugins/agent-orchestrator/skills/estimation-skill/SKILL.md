@@ -1,6 +1,7 @@
 ---
 name: estimation-skill
 description: Provide story point and time estimates for features and tasks using complexity analysis, historical patterns, and risk assessment. Use when the user asks "how long will this take", "estimate this feature", "story points", "effort estimation", or needs to plan sprints and timelines.
+allowed-tools: Read, Grep, Glob
 ---
 
 # Estimation Skill

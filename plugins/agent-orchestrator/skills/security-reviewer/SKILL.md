@@ -1,6 +1,7 @@
 ---
 name: security-reviewer
 description: Review code for security vulnerabilities — OWASP Top 10, injection attacks, broken auth, XSS, CSRF, secrets in code, insecure dependencies. Outputs severity-rated report. Use when the user says "security review", "check vulnerabilities", "OWASP audit", "security scan", or before deploying to production.
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 # Security Reviewer Skill

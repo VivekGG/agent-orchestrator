@@ -1,6 +1,7 @@
 ---
 name: nestjs-patterns
 description: Implement NestJS best practices — module architecture, dependency injection, guards, pipes, interceptors, exception filters, DTOs with class-validator, TypeORM/Prisma integration, and testing patterns. Use when building NestJS applications, creating modules, implementing middleware, or following NestJS conventions. Trigger on "NestJS", "Nest.js", "NestJS module", "NestJS guard", "NestJS service".
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # NestJS Patterns Skill

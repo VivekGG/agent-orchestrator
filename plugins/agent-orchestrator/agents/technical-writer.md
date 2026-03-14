@@ -3,6 +3,8 @@ name: technical-writer
 description: Writes documentation for the microservice stack — API references, architecture guides, README, runbooks, changelogs, and developer onboarding guides. Invoke for any documentation task.
 tools: Read, Write, Edit, Grep, Glob
 model: sonnet
+permissionMode: acceptEdits
+maxTurns: 20
 skills:
   - api-docs-generator
   - readme-generator

@@ -1,6 +1,7 @@
 ---
 name: competitor-analysis
 description: Research and compare competing products, features, pricing, and market positioning to inform product decisions. Use when the user asks about competitors, market research, competitive landscape, feature comparison, or needs to understand what alternatives exist.
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Competitor Analysis Skill

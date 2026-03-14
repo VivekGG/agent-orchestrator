@@ -1,6 +1,7 @@
 ---
 name: k8s-skill
 description: Generate Kubernetes manifests — deployments, services, ingress, HPA, ConfigMaps, secrets, and Helm charts. Use when the user mentions "Kubernetes", "K8s", "Helm", "deployment manifest", or needs to deploy to a Kubernetes cluster.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Kubernetes Skill

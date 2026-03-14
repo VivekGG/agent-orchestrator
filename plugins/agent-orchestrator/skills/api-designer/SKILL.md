@@ -1,6 +1,7 @@
 ---
 name: api-designer
 description: Design and generate API specifications — REST endpoints, GraphQL schemas, request/response formats, authentication, error codes, rate limiting, pagination, and versioning. Outputs in OpenAPI/Swagger YAML or Markdown. Use when the user says "design the API", "create API spec", "REST endpoints", "GraphQL schema", "API documentation", or needs to define the contract between frontend and backend.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # API Designer Skill

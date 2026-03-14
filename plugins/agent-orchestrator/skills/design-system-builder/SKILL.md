@@ -1,6 +1,7 @@
 ---
 name: design-system-builder
 description: Create component libraries, design tokens, theme systems, and shared UI primitives for consistent cross-app design. Use when building a design system, component library, theme configuration, or shared UI kit for React, Vue, Flutter, or any framework.
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Design System Builder Skill

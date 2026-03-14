@@ -1,6 +1,7 @@
 ---
 name: webapp-testing
 description: Test web applications using Playwright — E2E tests, UI verification, visual regression, accessibility checks, and cross-browser testing. Use when the user needs "E2E tests", "browser testing", "Playwright", "UI testing", "visual regression", or wants to verify web app behavior.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Web App Testing Skill

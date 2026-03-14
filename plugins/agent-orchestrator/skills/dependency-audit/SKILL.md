@@ -1,6 +1,7 @@
 ---
 name: dependency-audit
 description: Scan dependencies for vulnerabilities, outdated packages, license conflicts, and supply chain risks. Use when the user says "audit dependencies", "check vulnerabilities", "update packages", "npm audit", "supply chain security".
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Dependency Audit Skill

@@ -1,6 +1,7 @@
 ---
 name: state-machine-designer
 description: Model entity state transitions, guard conditions, side effects, and generate implementation code. Use when designing order flows, auth states, approval workflows, or any entity with distinct states and transition rules. Trigger on "state machine", "workflow states", "order flow", "status transitions".
+allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # State Machine Designer Skill

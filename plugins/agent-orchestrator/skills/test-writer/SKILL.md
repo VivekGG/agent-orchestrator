@@ -1,6 +1,7 @@
 ---
 name: test-writer
 description: Write comprehensive unit and integration tests — happy path, edge cases, error scenarios, security tests. Ensures minimum 80% coverage. Use when the user says "write tests", "add coverage", "test this", or after implementing features. Works with Jest, Vitest, Pytest, JUnit, and all major frameworks.
+allowed-tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 
 # Test Writer Skill

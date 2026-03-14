@@ -1,6 +1,7 @@
 ---
 name: product-knowledge
 description: Provide accurate information about the product being built — its features, architecture, user flows, and business logic. Use this skill as a template for creating product-specific knowledge bases that agents reference during development. Trigger when agents need to understand "how does our product work", "what does this feature do", or need domain context.
+allowed-tools: Read, Grep, Glob
 ---
 
 # Product Knowledge Skill

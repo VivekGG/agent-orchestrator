@@ -3,13 +3,15 @@ name: product-manager
 description: Gathers requirements, writes PRDs, user stories with acceptance criteria, feature lists, and business rules. The starting point for every feature. Invoke when planning features, defining scope, writing specs, or creating product documentation.
 tools: Read, Grep, Glob, Bash, Write
 model: opus
+permissionMode: acceptEdits
+maxTurns: 25
 skills:
   - project-requirements
   - user-story-writer
   - estimation-skill
   - competitor-analysis
   - product-knowledge
-memory: .claude/memory/product-manager/
+memory: project
 ---
 
 # Product Manager Agent

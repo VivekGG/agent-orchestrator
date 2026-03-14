@@ -1,6 +1,7 @@
 ---
 description: "Create and manage database migrations for both NestJS (Prisma) and Python (Django) services."
 argument-hint: "<action: create | apply | rollback | status> <service: core | ai>"
+disable-model-invocation: true
 ---
 
 ## Mission

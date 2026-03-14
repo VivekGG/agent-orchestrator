@@ -1,6 +1,7 @@
 ---
 name: compliance-checker
 description: Validate compliance with GDPR, CCPA, HIPAA, PCI-DSS, SOC2. Check data handling, consent flows, audit logging, and data retention. Use when the user mentions regulatory compliance or needs to ensure their application meets legal requirements.
+allowed-tools: Read, Grep, Glob, Bash
 ---
 
 # Compliance Checker Skill

@@ -1,6 +1,7 @@
 ---
 name: accessibility-audit
 description: Validate WCAG 2.1 AA/AAA compliance — ARIA labels, keyboard navigation, color contrast, screen reader support, focus management, and semantic HTML. Use when the user mentions "accessibility", "WCAG", "a11y", "screen reader", "keyboard navigation", or needs to make their app accessible to all users.
+allowed-tools: Read, Bash, Grep, Glob
 ---
 
 # Accessibility Audit Skill
