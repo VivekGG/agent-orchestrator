@@ -124,13 +124,207 @@ AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"
 - **E2E tests:** Seed script that creates known test data
 - **Naming:** `test_[feature]_[scenario]_[expected]`
 
+---
+
+## Coverage Enforcement Configs (MUST create these files)
+
+### NestJS — jest.config.ts (Core Service + API Gateway)
+```typescript
+import type { Config } from 'jest';
+
+const config: Config = {
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  rootDir: 'src',
+  testRegex: '.*\\.spec\\.ts$',
+  transform: { '^.+\\.(t|j)s$': 'ts-jest' },
+  collectCoverageFrom: ['**/*.(t|j)s', '!**/*.dto.ts', '!**/main.ts', '!**/*.module.ts'],
+  coverageDirectory: '../coverage',
+  coverageReporters: ['text', 'lcov', 'html', 'json-summary'],
+  testEnvironment: 'node',
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
+};
+export default config;
+```
+
+### Python — pyproject.toml (AI Service)
+```toml
+[tool.pytest.ini_options]
+addopts = "--cov=app --cov-report=term-missing --cov-report=html:htmlcov --cov-report=lcov:coverage.lcov --cov-fail-under=80"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["*/migrations/*", "*/admin.py", "manage.py"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true
+```
+
+### React/Next.js — vitest.config.ts (Web App)
+```typescript
+import { defineConfig } from 'vitest/config';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/test/setup.ts'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'lcov', 'html', 'json-summary'],
+      reportsDirectory: './coverage',
+      exclude: ['**/*.stories.tsx', '**/*.d.ts', 'src/test/**'],
+      thresholds: {
+        branches: 75,
+        functions: 75,
+        lines: 75,
+        statements: 75,
+      },
+    },
+  },
+});
+```
+
+### Flutter — scripts/check_coverage.sh
+```bash
+#!/bin/bash
+# Run after: flutter test --coverage
+# Requires: lcov, genhtml (brew install lcov)
+
+flutter test --coverage
+genhtml coverage/lcov.info -o coverage/html --quiet
+
+# Extract total line coverage
+COVERAGE=$(lcov --summary coverage/lcov.info 2>&1 | grep "lines" | grep -oE '[0-9]+\.[0-9]+' | head -1)
+THRESHOLD=75
+
+echo "Flutter coverage: ${COVERAGE}%  (threshold: ${THRESHOLD}%)"
+
+if (( $(echo "$COVERAGE < $THRESHOLD" | bc -l) )); then
+  echo "❌ Coverage ${COVERAGE}% is below threshold ${THRESHOLD}%"
+  exit 1
+fi
+echo "✅ Coverage ${COVERAGE}% meets threshold"
+```
+
+### KMP Shared Module — build.gradle.kts (JaCoCo)
+```kotlin
+plugins {
+    kotlin("multiplatform")
+    id("jacoco")
+}
+
+tasks.withType<Test> {
+    extensions.configure<JacocoTaskExtension> {
+        isEnabled = true
+    }
+    finalizedBy("jacocoTestReport")
+}
+
+tasks.register<JacocoReport>("jacocoTestReport") {
+    dependsOn(tasks.withType<Test>())
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+        csv.required.set(false)
+    }
+}
+
+tasks.register<JacocoCoverageVerification>("jacocoTestCoverageVerification") {
+    violationRules {
+        rule {
+            limit {
+                minimum = "0.75".toBigDecimal()  // 75% minimum
+            }
+        }
+    }
+}
+
+tasks.named("check") { dependsOn("jacocoTestCoverageVerification") }
+```
+
+---
+
+## Coverage Reports — Where They Go
+| Service | Report Location | Format |
+|---------|----------------|--------|
+| NestJS Core | `services/core-service/coverage/` | HTML + LCOV |
+| NestJS Gateway | `services/api-gateway/coverage/` | HTML + LCOV |
+| Python AI | `services/ai-service/htmlcov/` + `coverage.lcov` | HTML + LCOV |
+| React Web | `apps/web/coverage/` | HTML + LCOV |
+| Flutter | `apps/mobile-flutter/coverage/html/` | HTML + LCOV |
+| KMP Shared | `apps/mobile-kmp/shared/build/reports/jacoco/` | HTML + XML |
+
+CI: Upload all `lcov.info` / `coverage.xml` files as artifacts. Optionally send to Codecov:
+```yaml
+- uses: codecov/codecov-action@v4
+  with:
+    files: |
+      services/core-service/coverage/lcov.info
+      services/api-gateway/coverage/lcov.info
+      services/ai-service/coverage.lcov
+      apps/web/coverage/lcov.info
+    fail_ci_if_error: true
+```
+
+---
+
+## Contract Testing (Microservices — Pact)
+
+For API Gateway ↔ Core Service and Core Service ↔ AI Service contracts:
+
+### Consumer (API Gateway) — pact.spec.ts
+```typescript
+import { PactV3, MatchersV3 } from '@pact-foundation/pact';
+
+const provider = new PactV3({ consumer: 'api-gateway', provider: 'core-service' });
+
+describe('Core Service API contract', () => {
+  it('GET /users/:id returns user', () => {
+    provider
+      .given('user with id 1 exists')
+      .uponReceiving('a request for user 1')
+      .withRequest({ method: 'GET', path: '/users/1' })
+      .willRespondWith({
+        status: 200,
+        body: MatchersV3.like({ id: '1', email: 'test@example.com', name: 'Test' }),
+      });
+    return provider.executeTest(async (mockProvider) => {
+      const client = new CoreServiceClient(mockProvider.url);
+      const user = await client.getUser('1');
+      expect(user.id).toBe('1');
+    });
+  });
+});
+```
+
+### CI: Publish pacts to Pact Broker
+```bash
+npx pact-broker publish ./pacts --broker-base-url $PACT_BROKER_URL --consumer-app-version $GIT_SHA
+```
+
+---
+
 ## CI Test Pipeline Order
 ```
-1. Lint + Type Check (fail fast)
-2. Unit Tests (parallel per service)
-3. Integration Tests (sequential, needs DB)
-4. E2E Tests (sequential, needs full stack)
-5. Security Scan (parallel)
-6. Accessibility Audit (parallel)
-7. Performance Benchmark (on staging deploy)
+1. Lint + Type Check (fail fast — blocks everything)
+2. Unit Tests (parallel per service — all must pass, all must meet coverage threshold)
+3. Contract Tests (consumer pacts published, provider verified)
+4. Integration Tests (sequential — needs DB via Docker Compose)
+5. E2E Tests (sequential — needs full stack running)
+6. Security Scan (parallel with E2E)
+7. Accessibility Audit (parallel with E2E)
+8. Performance Benchmark (on staging only — not in every PR)
 ```
+
+**Coverage gate**: If ANY service is below its threshold, the entire CI run fails and agents are sent back to add tests.

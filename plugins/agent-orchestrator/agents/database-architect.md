@@ -73,3 +73,48 @@ CREATE INDEX idx_[table]_active ON [table](id) WHERE deleted_at IS NULL;
 - ALWAYS test migration + rollback on staging before production
 - NEVER drop columns in production — deprecate, then remove in next release
 - Naming: `YYYYMMDDHHMMSS_descriptive_name`
+
+## Docker Dev Setup (Conditional)
+
+After designing the schema, check `architecture.md`:
+
+- **If a database is required** → create `docker-compose.dev.yml` in the project root:
+
+```yaml
+# docker-compose.dev.yml — DB services only for local development
+# Full application containers are handled by devops-engineer in Phase 7
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-appdb}
+      POSTGRES_USER: ${POSTGRES_USER:-app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-app}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:                          # include only if architecture requires it
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  postgres_data:
+```
+
+- **If UI-only / no backend database** → skip `docker-compose.dev.yml` entirely. Note in `schema.md`: "No database required — UI-only architecture."
+
+**Why here (Phase 2) not Phase 7:**
+Phase 3 (build) and Phase 4 (tests) need a running database. devops-engineer in Phase 7 handles production Dockerfiles, docker-compose.prod.yml, Kubernetes, and Terraform — not the dev DB bootstrap.

@@ -39,14 +39,29 @@ Create the complete project structure from scratch.
 ```
 
 ## Steps
-1. Create all directories
-2. Scaffold each service with boilerplate (using setup-service per service)
-3. Create docker-compose.yml with all services
-4. Create GitHub Actions CI pipeline
-5. Create .env.example with all variables
-6. Copy CLAUDE.md, steering docs from plugin
-7. Initialize git + initial commit
-8. Report: "Project initialized. Run `docker-compose up` to start."
+1. Initialize git FIRST — before creating any files:
+   ```bash
+   git init
+   git checkout -b main
+   ```
+2. Create .gitignore covering: node_modules, __pycache__, .env, .dart_tool, build/, dist/, *.pyc, .DS_Store
+3. Stage and make initial commit immediately:
+   ```bash
+   git add .gitignore
+   git commit -m "chore: initialize project"
+   ```
+4. Create all directories (monorepo structure)
+5. Scaffold each service with boilerplate (using setup-service per service)
+6. Create docker-compose.yml with all services
+7. Create GitHub Actions CI pipeline
+8. Create .env.example with all variables
+9. Copy CLAUDE.md, steering docs from plugin
+10. Final commit with all scaffolded files:
+    ```bash
+    git add .
+    git commit -m "chore: scaffold full monorepo structure"
+    ```
+11. Report: "Project initialized. Run `docker-compose up` to start."
 
 ## Agents Used
 - system-architect → determines folder structure
