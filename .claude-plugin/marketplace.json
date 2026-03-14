@@ -12,7 +12,7 @@
       "description": "21 agents, 3 teams, 25 commands, 63 skills, 4 hooks for full development",
       "version": "2.1.0",
       "strict": false,
-      "source": "./plugins/agent-orchestrator"
+      "source": ".."
     }
   ]
 }
