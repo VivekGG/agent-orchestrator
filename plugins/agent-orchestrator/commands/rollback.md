@@ -17,12 +17,18 @@ Safely undo agent changes using git.
 
 ## Steps
 1. Show what will be rolled back: `git log --oneline -N`
-2. Use **AskUserQuestion tool**: "This will undo N commits. Proceed?" → ["Yes, rollback", "No, cancel"]
-3. Execute only if confirmed: `git reset --hard HEAD~N` or `git reset --hard <hash>`
+2. **STOP. Call the AskUserQuestion tool NOW — do NOT proceed without confirmation:**
+   ```
+   AskUserQuestion(
+     question="This will undo N commits. Proceed?",
+     options=["Yes, rollback", "No, cancel"]
+   )
+   ```
+3. Execute only if user selected "Yes, rollback": `git reset --hard HEAD~N` or `git reset --hard <hash>`
 4. Verify: `git status` + run tests
 
 ## Safety Rules
 - ALWAYS show what will be undone before executing
-- ALWAYS use AskUserQuestion tool to confirm with user — never assume consent
+- ALWAYS call AskUserQuestion tool before executing — never assume consent, never skip
 - NEVER rollback past the initial commit
 - Suggest `/backup` before risky rollbacks

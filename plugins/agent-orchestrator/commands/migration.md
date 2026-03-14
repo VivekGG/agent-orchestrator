@@ -16,11 +16,24 @@ Manage database migrations across services.
   - NestJS: `npx prisma migrate dev --name [description]`
   - Python: `python manage.py makemigrations`
 
-- **apply**: Run pending migrations
+- **apply**: Run pending migrations — **STOP. Call the AskUserQuestion tool BEFORE running:**
+  ```
+  AskUserQuestion(
+    question="Apply pending migrations to [service]?",
+    options=["Yes, apply migrations", "No, cancel"]
+  )
+  ```
+  Then run:
   - NestJS: `npx prisma migrate deploy`
   - Python: `python manage.py migrate`
 
-- **rollback**: Revert last migration
+- **rollback**: Revert last migration — **STOP. Call the AskUserQuestion tool BEFORE running:**
+  ```
+  AskUserQuestion(
+    question="Rollback last migration on [service]? This cannot be undone automatically.",
+    options=["Yes, rollback migration", "No, cancel"]
+  )
+  ```
   - NestJS: Revert in schema + `npx prisma migrate dev`
   - Python: `python manage.py migrate [app] [previous_migration]`
 

@@ -54,7 +54,14 @@ AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"
    - Edge cases
    - Which service(s) this touches (NestJS / Python / React / Flutter / KMP)
 3. Estimate effort using complexity scoring
-4. **Use AskUserQuestion tool**: "Requirements complete. Approve to proceed to design?" → ["Approve — proceed to design", "Request changes", "Cancel"]
+4. **STOP. Call the AskUserQuestion tool NOW — do NOT write this as text:**
+   ```
+   AskUserQuestion(
+     question="Requirements complete. Approve to proceed to design?",
+     options=["Approve — proceed to design", "Request changes", "Cancel"]
+   )
+   ```
+   Do NOT continue until the user responds.
 
 ### Cross-Service Features
 When a feature spans multiple services, create separate stories per service:

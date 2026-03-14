@@ -69,7 +69,14 @@ AskUserQuestion("Do you want to proceed?", options=["Yes, proceed", "No, cancel"
 ### For BIG features (approval gate):
 1. Read the approved spec
 2. Create implementation plan
-3. **Use AskUserQuestion tool**: "Implementation plan ready. Approve to begin?" → ["Approve — start implementation", "Request changes", "Cancel"]
+3. **STOP. Call the AskUserQuestion tool NOW — do NOT write this as text:**
+   ```
+   AskUserQuestion(
+     question="Implementation plan ready. Approve to begin?",
+     options=["Approve — start implementation", "Request changes", "Cancel"]
+   )
+   ```
+   Do NOT continue until the user responds.
 4. Implement in task order
 5. Run full test suite after each task
 6. Create PR with description

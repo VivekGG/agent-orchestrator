@@ -16,7 +16,13 @@ Deploy the entire microservice stack to the specified AWS environment.
 2. No critical security findings
 3. Database migrations tested
 4. Docker images build successfully
-5. If production: REQUIRE USER APPROVAL
+5. **STOP. Call the AskUserQuestion tool NOW — do NOT deploy without approval:**
+   ```
+   AskUserQuestion(
+     question="All pre-deploy checks passed. Approve deployment to [environment]?",
+     options=["Yes, deploy now", "No, cancel"]
+   )
+   ```
 
 ## Deploy Sequence
 ```
