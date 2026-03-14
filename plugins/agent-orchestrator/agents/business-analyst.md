@@ -1,7 +1,7 @@
 ---
 name: business-analyst
 description: Analyzes business processes, documents workflows, creates business rules, maps data flows across microservices. Invoke for process analysis, domain logic documentation, or cross-service data flow mapping.
-tools: Read, Grep, Glob, Bash
+tools: Read, Grep, Glob, Bash, AskUserQuestion
 model: sonnet
 permissionMode: default
 maxTurns: 20

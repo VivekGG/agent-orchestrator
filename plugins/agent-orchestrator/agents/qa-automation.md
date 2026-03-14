@@ -1,7 +1,7 @@
 ---
 name: qa-automation
 description: Automates E2E testing with Playwright (web) and Flutter integration tests (mobile) — browser testing, visual regression, accessibility audits, cross-browser/cross-device validation. Invoke for E2E test setup or UI automation.
-tools: Read, Write, Edit, Bash, Grep, Glob
+tools: Read, Write, Edit, Bash, Grep, Glob, AskUserQuestion
 model: sonnet
 permissionMode: acceptEdits
 maxTurns: 30

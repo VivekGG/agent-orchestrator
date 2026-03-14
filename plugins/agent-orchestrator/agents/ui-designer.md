@@ -1,7 +1,7 @@
 ---
 name: ui-designer
 description: Creates UI component specifications, design systems, responsive layouts for React/Next.js web and Flutter/KMP mobile. Invoke for component design, design system creation, or visual specifications.
-tools: Read, Grep, Glob, Write
+tools: Read, Grep, Glob, Write, AskUserQuestion
 model: sonnet
 permissionMode: acceptEdits
 maxTurns: 25

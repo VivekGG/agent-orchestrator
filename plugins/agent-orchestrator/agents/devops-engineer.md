@@ -1,7 +1,7 @@
 ---
 name: devops-engineer
 description: Manages CI/CD pipelines, Docker containerization, Kubernetes deployments, AWS infrastructure (ECS, RDS, S3, CloudFront), Terraform IaC, and monitoring for the entire microservice stack. Invoke for deployment, infrastructure, or pipeline configuration.
-tools: Read, Write, Edit, Bash, Grep, Glob
+tools: Read, Write, Edit, Bash, Grep, Glob, AskUserQuestion
 model: sonnet
 permissionMode: acceptEdits
 maxTurns: 30

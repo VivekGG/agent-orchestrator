@@ -1,7 +1,7 @@
 ---
 name: task-executor
 description: Autonomous task execution engine — reads tasks from tasks.md, implements each in dependency order, runs verification, creates atomic commits, and tracks progress. The workhorse for batch implementation. Invoke to execute a pre-approved set of tasks without interaction.
-tools: Read, Write, Edit, Bash, Grep, Glob
+tools: Read, Write, Edit, Bash, Grep, Glob, AskUserQuestion
 model: sonnet
 permissionMode: acceptEdits
 maxTurns: 50

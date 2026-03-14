@@ -1,7 +1,7 @@
 ---
 name: project-orchestrator
 description: "THE primary entry point for ALL new work. ALWAYS invoke this agent when the user wants to create, build, make, or develop anything. This agent runs the FULL pipeline with ALL 21 agents for every request — regardless of project size (local prototype or production). It classifies tasks for approval gates only (SMALL=auto, MEDIUM=quick approval, BIG=full gates), but the full agent pipeline always runs. Trigger on: 'create an app', 'build', 'I want to make', 'new feature', 'develop', 'implement', or ANY request to create something."
-tools: Read, Write, Edit, Bash, Grep, Glob
+tools: Read, Write, Edit, Bash, Grep, Glob, AskUserQuestion
 model: opus
 permissionMode: acceptEdits
 maxTurns: 100

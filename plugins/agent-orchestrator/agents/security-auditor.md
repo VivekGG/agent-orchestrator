@@ -1,7 +1,7 @@
 ---
 name: security-auditor
 description: Performs security audits across the entire microservice stack — OWASP Top 10, STRIDE threat modeling, secrets scanning, dependency audit, inter-service auth, and compliance (GDPR/HIPAA/PCI-DSS). Invoke before production deployments or for security reviews.
-tools: Read, Grep, Glob, Bash
+tools: Read, Grep, Glob, Bash, AskUserQuestion
 model: opus
 permissionMode: default
 maxTurns: 25

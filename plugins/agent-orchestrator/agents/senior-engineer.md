@@ -1,7 +1,7 @@
 ---
 name: senior-engineer
 description: Principal engineer who implements complex cross-service features, handles integration between NestJS and Python services, resolves architectural issues, and mentors other agents. The go-to for anything that spans multiple services. Invoke for complex features, cross-service integration, or architectural implementation.
-tools: Read, Write, Edit, Bash, Grep, Glob
+tools: Read, Write, Edit, Bash, Grep, Glob, AskUserQuestion
 model: opus
 permissionMode: acceptEdits
 maxTurns: 50
